@@ -23,8 +23,8 @@ public class AlbumService {
     public List<Album> getAlbums() {
         var request = new LoginRequest(
                 "client_credentials",
-                "seu_id_cliente_spotify",
-                "seu_id_spotify_secret"
+                "07ddc27e1cdb427bba639ea25672e4c2",
+                "47eb04ceb317404d9c6d96387c217928"
         );
         var token = authSpotifyClient.login(request).getAccessToken();
         var response = albumSpotifyClient.getReleases("Bearer " + token);

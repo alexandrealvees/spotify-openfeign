@@ -9,6 +9,8 @@ public class Album {
     private String id;
     private String name;
     private String releaseDate;
+    private String type;
+
 
     public Album() {
     }
@@ -17,6 +19,8 @@ public class Album {
         this.id = id;
         this.name = name;
         this.releaseDate = releaseDate;
+        this.type = type;
+
     }
 
     public String getId() {
@@ -41,5 +45,13 @@ public class Album {
 
     public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
